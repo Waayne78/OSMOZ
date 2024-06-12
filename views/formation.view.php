@@ -66,7 +66,6 @@
             <h2 class="testimonials-title">Témoignages</h2>
             <p>Découvrez les retours de participants précédents et comment les événements organisé par OSMOZ ont enrichi
                 leur compréhension de la data.
-
             </p>
             <div class="testimonial">
                 <p class="testimonial-text">"Cette formation m'a permis d'acquérir des compétences essentielles en IA.
@@ -74,9 +73,14 @@
                 <p class="testimonial-author">- Antoine</p>
             </div>
             <div class="testimonial">
-                <p class="testimonial-text">"Grâce à la formation en Data, j'ai pu obtenir un poste d'analyste de
-                    données."</p>
+                <p class="testimonial-text">"La formation en Data d'OSM'OZ m'a aidé à mieux comprendre les bases de
+                    l'analyse de données et à les appliquer dans mon travail quotidien."</p>
                 <p class="testimonial-author">- Milane</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Participer aux actions de bénévolat d'OSM'OZ m'a permis de rencontrer des
+                    gens formidables et de contribuer à des projets locaux."</p>
+                <p class="testimonial-author">- Fatima</p>
             </div>
         </section>
 
