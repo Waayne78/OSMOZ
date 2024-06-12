@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - OSM'OZ </title>
+    <title>À Propos - OSM'OZ</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -15,44 +15,35 @@
         </a>
         <nav>
             <ul>
-                <li><a href="about.view.php">A Propos</a></li>
-                <li><a href="actions.view.php">Nos Actions </a></li>
-                <li><a href="formation.view.php">Nos Formations </a></li>
+                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="actions.view.php">Nos Actions</a></li>
+                <li><a href="formation.view.php">Nos Formations</a></li>
                 <li><a href="news.view.php">Actualités</a></li>
-                <li><a href="views/contact.view.php">Contact</a></li>
+                <li><a href="contact.view.php">Contact</a></li>
                 <li><a class="donation" href="donation.view.php">Faire un don</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="contact-section">
-            <h1 class="title">Contactez-nous</h1>
-            <form class="form">
-                <div class="form-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" id="name" placeholder="Entrez votre nom complet">
-                </div>
-                <div class="form-group">
-                    <label for="email">Adresse e-mail</label>
-                    <input type="email" id="email" placeholder="Entrez votre adresse e-mail">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Entrez votre message"></textarea>
-                </div>
-                <button class="submit-button" type="submit">Envoyer</button>
-            </form>
-        </section>
-    </main>
+
+    <section id="about">
+        <div class="about-container">
+            <h1 class="section-title">À Propos de OSM'OZ</h1>
+            <p class="about-description">OSM'OZ est une organisation dédiée à l'avancement de l'intelligence artificielle, du développement et de la data. Notre mission est de démocratiser l'accès à la technologie et de former la prochaine génération de leaders technologiques.</p>
+            <p class="about-description">À travers nos initiatives éducatives, nos événements communautaires et nos programmes de formation, nous visons à créer un écosystème inclusif où chacun peut développer ses compétences et réaliser son potentiel dans le domaine de la technologie.</p>
+            <p class="about-description">Chez OSM'OZ, nous croyons en la puissance de la collaboration, de l'innovation et de l'éducation pour façonner un avenir meilleur pour tous.</p>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Liens Rapides</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À propos de nous</a></li>
-                    <li><a href="#">Nos Services</a></li>
-                    <li><a href="views/contact.view.php">Contact</a></li>
+                    <li><a href="../index.php">Accueil</a></li>
+                    <li><a href="actions.view.php">Nos Actions</a></li>
+                    <li><a href="formation.view.php">Nos Formations</a></li>
+                    <li><a href="news.view.php">Actualités</a></li>
+                    <li><a href="contact.view.php">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -64,7 +55,7 @@
                     <li><a href="#">Responsible Disclosure</a></li>
                 </ul>
             </div>
-            <div class="footer-section ">
+            <div class="footer-section">
                 <h3>Contact</h3>
                 <p>
                     <ion-icon name="call-outline"></ion-icon>

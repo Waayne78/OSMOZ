@@ -1,6 +1,4 @@
 <?php
-
-
 require_once 'views/contact.view.php';
 include 'dotenv.php';
 // On requiert notre fichier php_mailer.php qui contient les constantes pour la configuration du serveur SMTP

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - OSM'OZ </title>
+    <title>Nos Actions - OSM'OZ</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -15,44 +15,51 @@
         </a>
         <nav>
             <ul>
-                <li><a href="about.view.php">A Propos</a></li>
-                <li><a href="actions.view.php">Nos Actions </a></li>
-                <li><a href="formation.view.php">Nos Formations </a></li>
+                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="actions.view.php">Nos Actions</a></li>
+                <li><a href="formation.view.php">Nos Formations</a></li>
                 <li><a href="news.view.php">Actualités</a></li>
-                <li><a href="views/contact.view.php">Contact</a></li>
+                <li><a href="contact.view.php">Contact</a></li>
                 <li><a class="donation" href="donation.view.php">Faire un don</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="contact-section">
-            <h1 class="title">Contactez-nous</h1>
-            <form class="form">
-                <div class="form-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" id="name" placeholder="Entrez votre nom complet">
-                </div>
-                <div class="form-group">
-                    <label for="email">Adresse e-mail</label>
-                    <input type="email" id="email" placeholder="Entrez votre adresse e-mail">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Entrez votre message"></textarea>
-                </div>
-                <button class="submit-button" type="submit">Envoyer</button>
-            </form>
-        </section>
-    </main>
+
+    <section id="actions">
+        <h1 class="section-title">Nos Actions</h1>
+        <div class="actions-container">
+            <div class="action-card animated fadeInUp">
+                <ion-icon name="school-outline" class="action-icon"></ion-icon>
+                <h2 class="action-title">Ateliers Éducatifs</h2>
+                <p class="action-description">Nos ateliers éducatifs sont conçus pour enseigner les bases de l'intelligence artificielle et du développement aux jeunes esprits.</p>
+            </div>
+            <div class="action-card animated fadeInUp">
+                <ion-icon name="megaphone-outline" class="action-icon"></ion-icon>
+                <h2 class="action-title">Conférences et Séminaires</h2>
+                <p class="action-description">Nous organisons régulièrement des conférences et des séminaires avec des experts de l'industrie pour partager des connaissances avancées.</p>
+            </div>
+            <div class="action-card animated fadeInUp">
+                <ion-icon name="people-outline" class="action-icon"></ion-icon>
+                <h2 class="action-title">Projets Communautaires</h2>
+                <p class="action-description">Nos projets communautaires visent à appliquer la technologie pour résoudre des problèmes locaux et améliorer la qualité de vie.</p>
+            </div>
+            <div class="action-card animated fadeInUp">
+                <ion-icon name="briefcase-outline" class="action-icon"></ion-icon>
+                <h2 class="action-title">Formation Professionnelle</h2>
+                <p class="action-description">Nous proposons des programmes de formation professionnelle pour aider les individus à se préparer aux carrières dans le domaine de la technologie.</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Liens Rapides</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À propos de nous</a></li>
-                    <li><a href="#">Nos Services</a></li>
-                    <li><a href="views/contact.view.php">Contact</a></li>
+                    <li><a href="../index.php">Accueil</a></li>
+                    <li><a href="about.view.php">À propos de nous</a></li>
+                    <li><a href="services.view.php">Nos Services</a></li>
+                    <li><a href="contact.view.php">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -64,7 +71,7 @@
                     <li><a href="#">Responsible Disclosure</a></li>
                 </ul>
             </div>
-            <div class="footer-section ">
+            <div class="footer-section">
                 <h3>Contact</h3>
                 <p>
                     <ion-icon name="call-outline"></ion-icon>

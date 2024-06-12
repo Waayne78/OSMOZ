@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faire un Don - OSM'OZ</title>
-    <link rel="stylesheet" href="../styles/donation.css">
+    <title>Nos Formations - OSM'OZ</title>
+    <link rel="stylesheet" href="../styles/formation.css">
     <script src="../script/app.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
 </head>
 
 <body>
+
     <header>
         <a href="../index.php">
             <img src="../assets/images/logo.svg" alt="Logo" class="logo">
@@ -28,30 +27,62 @@
         </nav>
     </header>
 
-    <div class="donation-container">
-        <div class="donation-box">
-            <div class="title">Informations de Donation</div>
-            <div class="fields">
-                <input type="text" id="firstName" placeholder="Prénom" required>
-                <input type="text" id="lastName" placeholder="Nom" required>
-                <input type="email" id="email" placeholder="Email" required>
+    <main class="formations-container">
+        <h1 class="title">Nos Formations</h1>
+
+        <section class="card">
+            <h2 class="formation-title">Formation IA</h2>
+            <ion-icon class="formation-icon" name="bulb-outline"></ion-icon>
+            <div class="card-content">
+                <p class="formation-description">Plongez dans le monde de l'intelligence artificielle. Cette formation
+                    couvre les concepts de base, les algorithmes, et les applications pratiques de l'IA.</p>
+                <button class="formation-button">En savoir plus</button>
             </div>
-            <div class="amount">
-                <div class="button">30 €</div>
-                <div class="button">50 €</div>
-                <div class="button">100 €</div>
-                <div class="button">€<input type="text" class="set-amount" placeholder="Autre"></div>
+        </section>
+        <section class="card">
+            <h2 class="formation-title">Formation Data</h2>
+            <ion-icon class="formation-icon" name="cloud-download-outline"></ion-icon>
+            <div class="card-content">
+                <p class="formation-description">Apprenez les fondamentaux de l'analyse de données, y compris la
+                    collecte, le nettoyage, et l'analyse des données. Cette formation couvre également les techniques de
+                    visualisation des données et l'utilisation d'outils et langages comme Python...</p>
+                <button class="formation-button">En savoir plus</button>
             </div>
-            <div class="switch">
-                <input type="radio" class="switch-input" name="view" value="Ponctuel" id="ponctuel" checked>
-                <label for="ponctuel" class="switch-label switch-label-off">Ponctuel</label>
-                <input type="radio" class="switch-input" name="view" value="Mensuel" id="mensuel">
-                <label for="mensuel" class="switch-label switch-label-on">Mensuel</label>
-                <span class="switch-selection"></span>
+        </section>
+        <section class="card">
+            <h2 class="formation-title">Formation Développement Web</h2>
+            <ion-icon class="formation-icon" name="code-slash-outline"></ion-icon>
+            <div class="card-content">
+                <p class="formation-description">Apprenez à créer des sites web modernes et interactifs. Cette formation
+                    couvre les langages de programmation essentiels comme HTML, CSS et JavaScript, ainsi que les
+                    frameworks et outils populaires pour le développement front-end et back-end.</p>
+                <button class="formation-button">En savoir plus</button>
             </div>
-            <div class="donate-button"><i class="fa fa-credit-card"></i> Donner maintenant</div>
+        </section>
+        <div class="first-bg-image">
+            <img loading="lazy" src="../assets/images/first-bg-image.svg" alt="Image">
         </div>
-    </div>
+        <section id="testimonials">
+            <h2 class="testimonials-title">Témoignages</h2>
+            <p>Découvrez les retours de participants précédents et comment les événements organisé par OSMOZ ont enrichi
+                leur compréhension de la data.
+
+            </p>
+            <div class="testimonial">
+                <p class="testimonial-text">"Cette formation m'a permis d'acquérir des compétences essentielles en IA.
+                    Je recommande vivement !"</p>
+                <p class="testimonial-author">- Antoine</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Grâce à la formation en Data, j'ai pu obtenir un poste d'analyste de
+                    données."</p>
+                <p class="testimonial-author">- Milane</p>
+            </div>
+        </section>
+
+
+    </main>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -66,13 +97,13 @@
             <div class="footer-section">
                 <h3>Autres liens</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Responsible Disclosure</a></li>
+                    <li><a href="#">Accessibilité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Divulgation responsable</a></li>
                 </ul>
             </div>
-            <div class="footer-section ">
+            <div class="footer-section">
                 <h3>Contact</h3>
                 <p>
                     <ion-icon name="call-outline"></ion-icon>
@@ -121,6 +152,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

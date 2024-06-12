@@ -4,98 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSM'OZ</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title> Actualités- OSM'OZ</title>
+    <link rel="stylesheet" href="../styles/news.css">
+    <script defer src="../script/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
 </head>
 
 <body>
     <header>
-        <a href="index.php">
-            <img src="assets/images/logo.svg" alt="Logo" class="logo">
+        <a href="../index.php">
+            <img src="../assets/images/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
             <ul>
-                <li><a href="views/about.view.php">À Propos</a></li>
-                <li><a href="views/actions.view.php">Nos Actions </a></li>
-                <li><a href="views/formation.view.php">Nos Formations </a></li>
-                <li><a href="views/news.view.php">Actualités</a></li>
-                <li><a href="views/contact.view.php">Contact</a></li>
-                <li><a class="donation" href="views/donation.view.php">Faire un don</a></li>
+                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="actions.view.php">Nos Actions</a></li>
+                <li><a href="formation.view.php">Nos Formations</a></li>
+                <li><a href="news.view.php">Actualités</a></li>
+                <li><a href="contact.view.php">Contact</a></li>
+                <li><a class="donation" href="donation.view.php">Faire un don</a></li>
             </ul>
         </nav>
     </header>
-    <div class="first-bg-image">
-        <img loading="lazy" src="assets/images/first-bg-image.svg" alt="Image">
-    </div>
-    <section id="presentation">
-        <h2 class="animated fadeInDown">L'avenir de la data avec</h2>
-        <div class="osmoz-img animated zoomIn">
-            <img src="assets/images/osmoz-img.svg" alt="Osmoz">
-        </div>
-        <p class="first-p animated fadeInUp">
-            Rejoignez-nous pour explorer les frontières de l'intelligence artificielle, du développement et de la data
-            chez OSM'OZ. <br> Découvrez nos initiatives innovantes, participez à nos formations spécialisées, et restez
-            informé des dernières tendances technologiques <br> grâce à nos événements et ateliers interactifs.
-        </p>
-    </section>
-    <section id="video-section">
-        <div class="video-container">
-            <video src="video.mp4" controls></video>
+
+    <section class="splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+
+
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="../assets/images/ia.svg" alt=""></li>
+                <li class="splide__slide"><img src="../assets/images/sillicon-valley.svg" alt=""></li>
+                <li class="splide__slide"><img src="../assets/images/data.svg" alt=""></li>
+            </ul>
         </div>
     </section>
-    <section id="discover">
-        <div class="discover-text">
-            <h1>Découvrez le monde</h1>
-            <h1>de la data</h1>
-            <p>Un événement incontournable pour s’initier et explorer les perspectives offertes par la data, animé par
-                <br> Gauthier Vasseur.
-            </p>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="calendar" id="card">
-                    <img src="assets/images/calendar.svg" alt="calendar">
-                    <br>
-                    <p>21/02/24</p>
-                </div>
-                <div class="speaker" id="card">
-                    <img src="assets/images/speaker.svg" alt="speaker">
-                    <p>Intervenant</p>
-                </div>
-                <div class="info" id="card">
-                    <img src="assets/images/info.svg" alt="info">
-                    <p>Informations <br> Pratiques</p>
-                </div>
-                <div class="programme" id="card">
-                    <img src="assets/images/program.svg" alt="programme">
-                    <p>Programme</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="news">
-        <h1>Actualités</h1>
-        <div class="event-card">
-            <div class="event">
-                <p>Discover Sillicon Valley</p>
-                <br>
-                <img src="assets/images/sillicon-valley.svg" alt="">
-                <a class="sub" href="#">Je m'inscris</a>
-            </div>
-            <div class="event">
-                <p>IA Tech</p>
-                <br>
-                <img src="assets/images/ia.svg" alt="">
-                <a class="sub" href="#">Je m'inscris</a>
-            </div>
-            <div class="event">
-                <p>DATA</p>
-                <br>
-                <img src="assets/images/data.svg" alt="">
-                <a class="sub" href="#">Je m'inscris</a>
-            </div>
-        </div>
-    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide',
+                {
+                    type: 'loop',
+                    perPage: 1,
+                    autoplay: true,
+                    interval: 3000,
+                    pauseOnHover: false,
+                    resetProgress: false,
+                }
+            );
+            splide.mount(
+
+            );
+        });
+    </script>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -116,7 +81,7 @@
                     <li><a href="#">Responsible Disclosure</a></li>
                 </ul>
             </div>
-            <div class="footer-section ">
+            <div class="footer-section">
                 <h3>Contact</h3>
                 <p>
                     <ion-icon name="call-outline"></ion-icon>
@@ -165,6 +130,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
