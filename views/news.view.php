@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Actualités- OSM'OZ</title>
+    <title> Actualités - OSM'OZ</title>
     <link rel="stylesheet" href="../styles/news.css">
     <script defer src="../script/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -19,8 +19,13 @@
             <img src="../assets/images/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
-                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="about.view.php">A Propos</a></li>
                 <li><a href="actions.view.php">Nos Actions</a></li>
                 <li><a href="formation.view.php">Nos Formations</a></li>
                 <li><a href="news.view.php">Actualités</a></li>
@@ -31,7 +36,6 @@
     </header>
 
     <section class="splide" aria-labelledby="carousel-heading">
-        <h2 id="carousel-heading">Splide Basic HTML Example</h2>
 
 
         <div class="splide__track">

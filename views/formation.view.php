@@ -11,17 +11,22 @@
 
 <body>
 
-    <header>
+<header>
         <a href="../index.php">
             <img src="../assets/images/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
-                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="about.view.php">A Propos</a></li>
                 <li><a href="actions.view.php">Nos Actions</a></li>
                 <li><a href="formation.view.php">Nos Formations</a></li>
                 <li><a href="news.view.php">Actualités</a></li>
-                <li><a href="contact.view.php">Contact</a></li>
+                <li><a href="views/contact.view.php">Contact</a></li>
                 <li><a class="donation" href="donation.view.php">Faire un don</a></li>
             </ul>
         </nav>
@@ -70,7 +75,7 @@
             <div class="testimonial">
                 <p class="testimonial-text">"Cette formation m'a permis d'acquérir des compétences essentielles en IA.
                     Je recommande vivement !"</p>
-                <p class="testimonial-author">- Antoine</p>
+                <p class="testimonial-author">- Laura</p>
             </div>
             <div class="testimonial">
                 <p class="testimonial-text">"La formation en Data d'OSM'OZ m'a aidé à mieux comprendre les bases de
@@ -80,7 +85,7 @@
             <div class="testimonial">
                 <p class="testimonial-text">"Participer aux actions de bénévolat d'OSM'OZ m'a permis de rencontrer des
                     gens formidables et de contribuer à des projets locaux."</p>
-                <p class="testimonial-author">- Fatima</p>
+                <p class="testimonial-author">- Dania</p>
             </div>
         </section>
 

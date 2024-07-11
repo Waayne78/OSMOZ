@@ -58,8 +58,30 @@ nav a:hover {
   background-color: #ee6353;
 }
 
+
 .donation:hover {
   transform: scale(1.05);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 1rem; 
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+#splide {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 li img {
@@ -239,5 +261,85 @@ li img {
 
   100% {
     left: 100%;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  header {
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+  
+  nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #190421;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem;
+  }
+
+  nav ul li {
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+
+  nav ul li a {
+      padding: 1rem;
+  }
+
+  nav ul.active {
+      display: flex;
+  }
+
+  form {
+      padding: 1rem;
+  }
+
+  #splide {
+      max-width: 100%;
+      margin-top: 100px;
+      
+  }
+
+  li img {
+    margin-top: 150px;
+  }
+  
+  button {
+    margin-top: 75px;
+  }
+
+  button .splide__pagination__page {
+    margin-top: 50px;
+  }
+
+
+  .footer .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer .footer-section {
+      margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .footer-text {
+      font-size: 0.875rem;
+  }
+
+  .footer .contact-info p {
+      font-size: 0.875rem;
   }
 }

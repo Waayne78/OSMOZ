@@ -18,6 +18,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     position: fixed; 
     top: 0; 
@@ -25,7 +26,16 @@ header {
     z-index: 1000; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     background-color: #190421;
-    }
+}
+
+.logo {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
 
 nav ul {
     display: flex;
@@ -36,6 +46,7 @@ nav ul {
 nav ul li {
     margin-right: 1rem;
 }
+
 nav a {
     display: block;
     padding: 0.5rem 1rem;
@@ -47,17 +58,23 @@ nav a {
 
 nav a:hover {
     background-color: #ee6353;
-    transform: scale(1.1); /* Zoom au survol */
+    transform: scale(1.1);
 }
 
-.donation {
-    border: 1px solid #ee6353;
-    background-color: #ee6353;
-    transition: transform 0.3s;
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 1rem; /* Adjusts spacing on the left */
 }
 
-.donation:hover {
-    transform: scale(1.05);
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
 }
 
 .donation-container {
@@ -210,7 +227,7 @@ nav a:hover {
 
 .footer {
     margin-top: 100px;
-    background-color: #825bef;  /* Couleur de fond modifiée */
+    background-color: #825bef;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -226,40 +243,33 @@ nav a:hover {
     margin: 0 auto;
     padding: 0 1rem;
     flex-wrap: wrap;
-    
-
 }
 
 .footer .footer-section {
     flex: 1;
     min-width: 200px;
     margin: 0 1rem;
-
 }
 
 .footer .footer-section h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-
 }
 
 .footer .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-
 }
 
 .footer .footer-links li {
     margin: 0.5rem 0;
-
 }
 
 .footer .footer-links a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
-
 }
 
 .footer .footer-links a:hover {
@@ -273,13 +283,11 @@ nav a:hover {
     margin-top: 1rem;
     list-style: none;
     padding: 0;
-
 }
 
 .footer .social-icon__item {
     margin: 0 1rem;
     position: relative;
-
 }
 
 .footer .social-icon__link {
@@ -289,7 +297,6 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     display: inline-block;
-
 }
 
 .footer .social-icon__link::before {
@@ -302,7 +309,6 @@ nav a:hover {
     background: #ee6353;
     transition: width 0.3s ease-out;
     z-index: -1;
-
 }
 
 .footer .social-icon__link:hover::before {
@@ -318,7 +324,6 @@ nav a:hover {
     margin: 1rem 0;
     text-align: left;
     flex: 1;
-
 }
 
 .footer .contact-info p {
@@ -339,7 +344,6 @@ nav a:hover {
     font-weight: 300;
     opacity: 0.75;
     transition: opacity 0.3s, color 0.3s;
-
 }
 
 .footer .footer-text:hover {
@@ -364,6 +368,91 @@ nav a:hover {
     }
     100% {
         left: 100%;
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+        order: 2;
+    }
+
+    nav {
+        order: 1;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #190421;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+    }
+
+    .donation-container {
+        padding: 1rem;
+    }
+
+    .donation-box {
+        margin-top: 20%;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-box {
+        padding: 1rem;
+    }
+
+    .donation-box .fields input {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .donation-box .amount .button {
+        padding: 0.5rem;
+    }
+
+    .donation-box .donate-button {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .footer .footer-section h3 {
+        font-size: 1rem;
     }
 }
 

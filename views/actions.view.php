@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Actions - OSM'OZ</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../script/app.js" defer></script>
+
+
 </head>
 
 <body>
@@ -14,12 +17,17 @@
             <img src="../assets/images/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
-                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="about.view.php">A Propos</a></li>
                 <li><a href="actions.view.php">Nos Actions</a></li>
                 <li><a href="formation.view.php">Nos Formations</a></li>
                 <li><a href="news.view.php">Actualités</a></li>
-                <li><a href="contact.view.php">Contact</a></li>
+                <li><a href="views/contact.view.php">Contact</a></li>
                 <li><a class="donation" href="donation.view.php">Faire un don</a></li>
             </ul>
         </nav>
@@ -31,22 +39,26 @@
             <div class="action-card animated fadeInUp">
                 <ion-icon name="school-outline" class="action-icon"></ion-icon>
                 <h2 class="action-title">Ateliers Éducatifs</h2>
-                <p class="action-description">Nos ateliers éducatifs sont conçus pour enseigner les bases de l'intelligence artificielle et du développement aux jeunes esprits.</p>
+                <p class="action-description">Nos ateliers éducatifs sont conçus pour enseigner les bases de
+                    l'intelligence artificielle et du développement aux jeunes esprits.</p>
             </div>
             <div class="action-card animated fadeInUp">
                 <ion-icon name="megaphone-outline" class="action-icon"></ion-icon>
                 <h2 class="action-title">Conférences et Séminaires</h2>
-                <p class="action-description">Nous organisons régulièrement des conférences et des séminaires avec des experts de l'industrie pour partager des connaissances avancées.</p>
+                <p class="action-description">Nous organisons régulièrement des conférences et des séminaires avec des
+                    experts de l'industrie pour partager des connaissances avancées.</p>
             </div>
             <div class="action-card animated fadeInUp">
                 <ion-icon name="people-outline" class="action-icon"></ion-icon>
                 <h2 class="action-title">Projets Communautaires</h2>
-                <p class="action-description">Nos projets communautaires visent à appliquer la technologie pour résoudre des problèmes locaux et améliorer la qualité de vie.</p>
+                <p class="action-description">Nos projets communautaires visent à appliquer la technologie pour résoudre
+                    des problèmes locaux et améliorer la qualité de vie.</p>
             </div>
             <div class="action-card animated fadeInUp">
                 <ion-icon name="briefcase-outline" class="action-icon"></ion-icon>
                 <h2 class="action-title">Formation Professionnelle</h2>
-                <p class="action-description">Nous proposons des programmes de formation professionnelle pour aider les individus à se préparer aux carrières dans le domaine de la technologie.</p>
+                <p class="action-description">Nous proposons des programmes de formation professionnelle pour aider les
+                    individus à se préparer aux carrières dans le domaine de la technologie.</p>
             </div>
         </div>
     </section>

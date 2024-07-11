@@ -12,13 +12,18 @@
 </head>
 
 <body>
-    <header>
+<header>
         <a href="../index.php">
             <img src="../assets/images/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
-                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="about.view.php">A Propos</a></li>
                 <li><a href="actions.view.php">Nos Actions</a></li>
                 <li><a href="formation.view.php">Nos Formations</a></li>
                 <li><a href="news.view.php">Actualités</a></li>

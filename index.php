@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSM'OZ</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script/app.js" defer></script>
+
 </head>
 
 <body>
@@ -14,6 +16,11 @@
             <img src="assets/images/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href="views/about.view.php">À Propos</a></li>
                 <li><a href="views/actions.view.php">Nos Actions </a></li>
@@ -30,7 +37,7 @@
     <section id="presentation">
         <h2 class="animated fadeInDown">L'avenir de la data avec</h2>
         <div class="osmoz-img animated zoomIn">
-            <img src="assets/images/osmoz-img.svg" alt="Osmoz">
+            <img src="assets/images/osmoz-img.svg" class="omsoz-first-img" alt="Osmoz">
         </div>
         <p class="first-p animated fadeInUp">
             Rejoignez-nous pour explorer les frontières de l'intelligence artificielle, du développement et de la data
